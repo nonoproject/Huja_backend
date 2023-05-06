@@ -1,0 +1,50 @@
+<odoo>
+  <data>
+   <record id="missing_people_services_view_form" model="ir.ui.view">
+        <field name="name">missing_people_services_view_form</field>
+        <field name="model">huja.missing.people.services</field>
+        <field name="arch" type="xml">
+            <form string="missing people Services">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="description"/>
+                            <field name="date"/>
+                            <field name="city"/>
+                            <field name="phone"/>
+                        </group>
+
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+        <record id="missing_people_services_view_tree" model="ir.ui.view">
+            <field name="name">missing_people_services_view_tree</field>
+            <field name="model">huja.missing.people.services</field>
+            <field name="arch" type="xml">
+                <tree string="Missing People Services">
+                        <field name="name"/>
+                        <field name="description"/>
+                        <field name="date"/>
+                        <field name="city"/>
+                        <field name="phone"/>
+                </tree>
+            </field>
+        </record>
+        <record id="missing_people_services_action" model="ir.actions.act_window">
+            <field name="name">Missing People Services</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">huja.missing.people.services</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+       <!-- Top menu item -->
+
+
+
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="missing_people_services_menu" name="missing people Services"  parent="huja_menu_root" action="missing_people_services_action" sequence="4"/>
+  </data>
+</odoo>

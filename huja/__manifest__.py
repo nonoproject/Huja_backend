@@ -30,6 +30,9 @@
         'views/home_services.xml',
         'views/trip_services.xml',
         'views/water_services.xml',
+        'views/medicine.xml',
+        'views/missing_people_services.xml',
+        'views/phone_balance_services.xml'
         # 'views/templates.xml',
     ],
     # only loaded in demonstration mode

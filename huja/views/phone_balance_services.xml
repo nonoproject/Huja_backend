@@ -1,0 +1,49 @@
+<odoo>
+  <data>
+   <record id="phone_balance_services_view_form" model="ir.ui.view">
+        <field name="name">phone_balance_services_view_form</field>
+        <field name="model">huja.phone.balance.services</field>
+        <field name="arch" type="xml">
+            <form string="Phone Balance Services">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="phone"/>
+                            <field name="description"/>
+                            <field name="sms_type"/>
+                            <field name="amount"/>
+                        </group>
+
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+        <record id="phone_balance_services_view_tree" model="ir.ui.view">
+            <field name="name">phone_balance_services_view_tree</field>
+            <field name="model">huja.phone.balance.services</field>
+            <field name="arch" type="xml">
+                <tree string="home Services">
+                    <field name="phone"/>
+                    <field name="description"/>
+                    <field name="sms_type"/>
+                    <field name="amount"/>
+                        
+                </tree>
+            </field>
+        </record>
+        <record id="phone_balance_services_action" model="ir.actions.act_window">
+            <field name="name">Phone  Balance Services</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">huja.phone.balance.services</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+       <!-- Top menu item -->
+
+
+
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="phone_balance_services_menu" name="Phone Balance Services"  parent="huja_menu_root" action="phone_balance_services_action" sequence="6"/>
+  </data>
+</odoo>

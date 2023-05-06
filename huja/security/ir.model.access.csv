@@ -4,3 +4,6 @@ access_area,huja.city.area,model_huja_city_area,,1,1,1,1
 access_home_services,huja.home.services,model_huja_home_services,,1,1,1,1
 access_trip_services,huja.trips.services,model_huja_trips_services,,1,1,1,1
 access_water_services,huja.water.services,model_huja_water_services,,1,1,1,1
+access_medicine_service,huja.medicine.services,model_huja_medicine_services,,1,1,1,1
+access_missing_people_services,huja.missing.people.services,model_huja_missing_people_services,,1,1,1,1
+access_phone_balance_services,huja.phone.balance.services,model_huja_phone_balance_services,,1,1,1,1
