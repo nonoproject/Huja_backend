@@ -1,0 +1,51 @@
+<odoo>
+  <data>
+   <record id="water_services_view_form" model="ir.ui.view">
+        <field name="name">water_services_view_form</field>
+        <field name="model">huja.water.services</field>
+        <field name="arch" type="xml">
+            <form string="Water Services">
+                <sheet>
+                    <group>
+                        <group>
+                        <field name="name"/>
+                        <field name="city"/>
+                        <field name="quantity"/>
+                        <field name="services_type"/>
+                        <field name="Amount"/>
+                        </group>
+
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+        <record id="water_services_view_tree" model="ir.ui.view">
+            <field name="name">water_services_view_tree</field>
+            <field name="model">huja.water.services</field>
+            <field name="arch" type="xml">
+                <tree string="Water Services">
+                   <field name="name"/>
+                        <field name="name"/>
+                        <field name="city"/>
+                        <field name="quantity"/>
+                        <field name="services_type"/>
+                        <field name="Amount"/>
+                </tree>
+            </field>
+        </record>
+        <record id="water_services_action" model="ir.actions.act_window">
+            <field name="name">Water Services</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">huja.water.services</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+       <!-- Top menu item -->
+
+
+
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="water_services_menu" name="Water Services"  parent="huja_menu_root" action="water_services_action" sequence="3"/>
+  </data>
+</odoo>

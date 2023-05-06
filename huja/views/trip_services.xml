@@ -1,0 +1,55 @@
+<odoo>
+  <data>
+   <record id="trip_services_view_form" model="ir.ui.view">
+        <field name="name">trip_services_view_form</field>
+        <field name="model">huja.trips.services</field>
+        <field name="arch" type="xml">
+            <form string="Trip Services">
+                <sheet>
+                    <group>
+                        <group>
+                        <field name="name"/>
+                        <field name="from_location"/>
+                        <field name="to_location"/>
+                        <field name="services_type"/>
+                        <field name="people_number"/>
+                        <field name="Amount"/>
+                        <field name="date"/>
+                        </group>
+
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+        <record id="trip_services_view_tree" model="ir.ui.view">
+            <field name="name">trip_services_view_tree</field>
+            <field name="model">huja.trips.services</field>
+            <field name="arch" type="xml">
+                <tree string="Trip Services">
+                   <field name="name"/>
+                        <field name="name"/>
+                        <field name="from_location"/>
+                        <field name="to_location"/>
+                        <field name="services_type"/>
+                        <field name="people_number"/>
+                        <field name="Amount"/>
+                        <field name="date"/>
+                </tree>
+            </field>
+        </record>
+        <record id="trip_services_action" model="ir.actions.act_window">
+            <field name="name">Trip Services</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">huja.trips.services</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+       <!-- Top menu item -->
+
+
+
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="trip_services_menu" name="Trip Services"  parent="huja_menu_root" action="trip_services_action" sequence="2"/>
+  </data>
+</odoo>

@@ -1,0 +1,45 @@
+<odoo>
+  <data>
+   <record id="city_view_form" model="ir.ui.view">
+        <field name="name">city_view_form</field>
+        <field name="model">huja.city</field>
+        <field name="arch" type="xml">
+            <form string="City Form">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="area_line"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+        <record id="city_view_tree" model="ir.ui.view">
+            <field name="name">city_view_tree</field>
+            <field name="model">huja.city</field>
+            <field name="arch" type="xml">
+                <tree string="City Tree">
+                    <field name="name"/>
+                  <field name="area_line"/>
+                </tree>
+            </field>
+        </record>
+        <record id="city_action" model="ir.actions.act_window">
+            <field name="name">City</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">huja.city</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+       <!-- Top menu item -->
+
+        <menuitem name="Huja"
+                  id="huja_menu_root"
+                  sequence="1"
+        />
+
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="configuration_menu" name="Configuration"  parent="huja_menu_root" sequence="4"/>
+        <menuitem id="city_menu" name="City"  parent="configuration_menu" action="city_action" sequence="1"/>
+  </data>
+</odoo>

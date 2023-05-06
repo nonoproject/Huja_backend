@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_city,huja.city,model_huja_city,,1,1,1,1
+access_area,huja.city.area,model_huja_city_area,,1,1,1,1
+access_home_services,huja.home.services,model_huja_home_services,,1,1,1,1
+access_trip_services,huja.trips.services,model_huja_trips_services,,1,1,1,1
+access_water_services,huja.water.services,model_huja_water_services,,1,1,1,1
