@@ -4,6 +4,11 @@ from odoo import fields, models, api
 class TripServices(models.Model):
     _name = 'huja.trips.services'
     _description = 'Describe Trip Services'
+    def action_to_done(self):
+        self.status = "done"
+    def action_to_cancel(self):
+        self.status = "cancel"
+    status = fields.Selection([('draft','Draft'),('done', 'Done'),('cancel', 'Cancel')],default = 'draft', string='Status')
 
     name = fields.Char('Name')
     from_location = fields.Many2one('huja.city', 'From Location')

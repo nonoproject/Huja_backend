@@ -5,6 +5,15 @@
         <field name="model">huja.water.services</field>
         <field name="arch" type="xml">
             <form string="Water Services">
+            <header>
+                        <!-- Post -->
+                    <button name="action_to_done" string="Done" class="oe_highlight"
+                                type="object"   attrs="{'invisible': [('status','!=','draft')]}" />
+                    <button name="action_to_cancel" string="Cancel" class="oe_highlight"
+                                type="object" attrs="{'invisible': [('status','!=','draft')]}" />
+                       
+                    <field name="status" widget="statusbar" statusbar_visible="draft,done,cancel"/>
+                </header>
                 <sheet>
                     <group>
                         <group>
@@ -46,6 +55,6 @@
 
 
         <!-- This Menu Item must have a parent and an action -->
-        <menuitem id="water_services_menu" name="Water Services"  parent="huja_menu_root" action="water_services_action" sequence="3"/>
+        <menuitem id="water_services_menu" name="Water"   parent="huja_menu_root" action="water_services_action" sequence="3"/>
   </data>
 </odoo>

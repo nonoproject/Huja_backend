@@ -39,7 +39,7 @@
         />
 
         <!-- This Menu Item must have a parent and an action -->
-        <menuitem id="configuration_menu" name="Configuration"  parent="huja_menu_root" sequence="9"/>
+        <menuitem id="configuration_menu" name="Configuration"  parent="huja_menu_root" sequence="19"/>
         <menuitem id="city_menu" name="City"  parent="configuration_menu" action="city_action" sequence="1"/>
   </data>
 </odoo>

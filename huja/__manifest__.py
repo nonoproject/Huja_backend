@@ -32,11 +32,14 @@
         'views/water_services.xml',
         'views/medicine.xml',
         'views/missing_people_services.xml',
-        'views/phone_balance_services.xml'
+        'views/phone_balance_services.xml',
+        'views/doctor_services.xml',
+        'views/fuel_services.xml',
+        'views/electricity_service.xml',
         # 'views/templates.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
-        'demo/demo.xml',
+        # 'demo/demo.xml',
     ],
 }

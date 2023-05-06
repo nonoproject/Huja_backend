@@ -7,3 +7,7 @@ access_water_services,huja.water.services,model_huja_water_services,,1,1,1,1
 access_medicine_service,huja.medicine.services,model_huja_medicine_services,,1,1,1,1
 access_missing_people_services,huja.missing.people.services,model_huja_missing_people_services,,1,1,1,1
 access_phone_balance_services,huja.phone.balance.services,model_huja_phone_balance_services,,1,1,1,1
+
+access_doctor_service,huja.doctor.services,model_huja_doctor_services,,1,1,1,1
+access_fuel_service,huja.fuel.services,model_huja_fuel_services,,1,1,1,1
+access_electricity_service,huja.electricity.services,model_huja_electricity_services,,1,1,1,1

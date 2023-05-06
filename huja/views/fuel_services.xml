@@ -1,13 +1,13 @@
 <odoo>
   <data>
-   <record id="missing_people_services_view_formiii" model="ir.ui.view">
-        <field name="name">missing_people_services_view_form</field>
-        <field name="model">huja.missing.people.services</field>
+   <record id="fuel_services_view_form" model="ir.ui.view">
+        <field name="name">fuel_services_view_form</field>
+        <field name="model">huja.fuel.services</field>
         <field name="arch" type="xml">
-            <form string="missing people">
+            <form string="Fuel Services">
                 <header>
                         <!-- Post -->
-                    <button name="action_to_done" string="Done" class="oe_highlight"
+                        <button name="action_to_done" string="Done" class="oe_highlight"
                                 type="object"   attrs="{'invisible': [('status','!=','draft')]}" />
                     <button name="action_to_cancel" string="Cancel" class="oe_highlight"
                                 type="object" attrs="{'invisible': [('status','!=','draft')]}" />
@@ -17,10 +17,11 @@
                 <sheet>
                     <group>
                         <group>
-                            <field name="name"/>
-                            <field name="description"/>
-                            <field name="date"/>
+                            <field name="services_type"/>
+                            <field name="fuel_type"/>
+                            <field name="quantity"/>
                             <field name="city"/>
+                            <field name="amount"/>
                             <field name="phone"/>
                         </group>
 
@@ -30,23 +31,24 @@
         </field>
     </record>
 
-        <record id="missing_people_services_view_tree" model="ir.ui.view">
-            <field name="name">missing_people_services_view_tree</field>
-            <field name="model">huja.missing.people.services</field>
+        <record id="fuel_services_view_tree" model="ir.ui.view">
+            <field name="name">fuel_services_view_tree</field>
+            <field name="model">huja.fuel.services</field>
             <field name="arch" type="xml">
-                <tree string="Missing People Services">
-                        <field name="name"/>
-                        <field name="description"/>
-                        <field name="date"/>
+                <tree string="Fuel Services">
+                        <field name="services_type"/>
+                        <field name="fuel_type"/>
+                        <field name="quantity"/>
                         <field name="city"/>
+                        <field name="amount"/>
                         <field name="phone"/>
                 </tree>
             </field>
         </record>
-        <record id="missing_people_services_action" model="ir.actions.act_window">
-            <field name="name">Missing People Services</field>
+        <record id="fuel_services_action" model="ir.actions.act_window">
+            <field name="name">Fuel Services</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">huja.missing.people.services</field>
+            <field name="res_model">huja.fuel.services</field>
             <field name="view_mode">tree,form</field>
         </record>
        <!-- Top menu item -->
@@ -54,6 +56,6 @@
 
 
         <!-- This Menu Item must have a parent and an action -->
-        <menuitem id="missing_people_services_menu" name="missing people"  parent="huja_menu_root" action="missing_people_services_action" sequence="4"/>
+        <menuitem id="fuel_services_menu" name="fuel"  parent="huja_menu_root" action="fuel_services_action" sequence="8"/>
   </data>
 </odoo>
