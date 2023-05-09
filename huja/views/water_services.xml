@@ -18,10 +18,12 @@
                     <group>
                         <group>
                         <field name="name"/>
+                        <field name="person_id"/>
                         <field name="city"/>
                         <field name="quantity"/>
                         <field name="services_type"/>
                         <field name="Amount"/>
+
                         </group>
 
                     </group>
@@ -36,11 +38,12 @@
             <field name="arch" type="xml">
                 <tree string="Water Services">
                    <field name="name"/>
-                        <field name="name"/>
+                        <field name="person_id"/>
                         <field name="city"/>
                         <field name="quantity"/>
                         <field name="services_type"/>
                         <field name="Amount"/>
+                    <field name="status"/>
                 </tree>
             </field>
         </record>

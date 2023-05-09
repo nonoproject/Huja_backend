@@ -10,6 +10,7 @@ class DoctorServices(models.Model):
     name = fields.Char('Name')
     services_type = fields.Selection([('available', 'Available'),
                                       ('required', 'Required')], string='Services Type', required=True, tracking=True, copy=False,)
+    person_id = fields.Many2one('res.users', 'Person')
     department = fields.Char('Department')
     city = fields.Many2one('huja.city', 'City')
     amount = fields.Selection([('free', 'free'),('0-20,000', '0-20,000')], string='Amount')

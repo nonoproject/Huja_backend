@@ -21,6 +21,7 @@
                             <field name="description"/>
                             <field name="date"/>
                             <field name="city"/>
+                            <field name="person_id"/>
                             <field name="phone"/>
                         </group>
 
@@ -39,7 +40,9 @@
                         <field name="description"/>
                         <field name="date"/>
                         <field name="city"/>
+                        <field name="person_id"/>
                         <field name="phone"/>
+                        <field name="status"/>
                 </tree>
             </field>
         </record>

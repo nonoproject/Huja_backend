@@ -8,6 +8,7 @@ class missing_people_services(models.Model):
         self.status = "cancel"
     status = fields.Selection([('draft','Draft'),('done', 'Done'),('cancel', 'Cancel')],default = 'draft', string='Status')
     name = fields.Char('Name')
+    person_id = fields.Many2one('res.users', 'Person')
     description = fields.Text('Description')
     phone = fields.Char('Phone')
     city = fields.Many2one('huja.city','City')

@@ -9,6 +9,7 @@ class Medicine(models.Model):
         self.status = "cancel"
     status = fields.Selection([('draft','Draft'),('done', 'Done'),('cancel', 'Cancel')],default = 'draft', string='Status')
     name = fields.Char('Name')
+    person_id = fields.Many2one('res.users', 'Person')
     phone = fields.Char('Phone')
     city = fields.Many2one('huja.city','City')
     quantity = fields.Selection([('0-5', '6-10')], string='Quantity')

@@ -11,6 +11,7 @@ class TripServices(models.Model):
     status = fields.Selection([('draft','Draft'),('done', 'Done'),('cancel', 'Cancel')],default = 'draft', string='Status')
 
     name = fields.Char('Name')
+    person_id = fields.Many2one('res.users', 'Person')
     from_location = fields.Many2one('huja.city', 'From Location')
     to_location = fields.Many2one('huja.city', 'To Location')
     services_type = fields.Selection([('available', 'Available'),

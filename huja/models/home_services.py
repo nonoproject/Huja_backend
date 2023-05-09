@@ -10,6 +10,7 @@ class HomeServices(models.Model):
         self.status = "cancel"
     status = fields.Selection([('draft','Draft'),('done', 'Done'),('cancel', 'Cancel')],default = 'draft', string='Status')
     name = fields.Char('Name')
+    person_id = fields.Many2one('res.users', 'Person')
     city = fields.Many2one('huja.city', 'City')
     area = fields.Many2one('huja.city.area', 'Area')
     hosting_type = fields.Selection([('family', 'Family'),

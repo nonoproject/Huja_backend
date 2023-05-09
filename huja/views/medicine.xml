@@ -11,13 +11,13 @@
                                 type="object"   attrs="{'invisible': [('status','!=','draft')]}" />
                     <button name="action_to_cancel" string="Cancel" class="oe_highlight"
                                 type="object" attrs="{'invisible': [('status','!=','draft')]}" />
-                       
                     <field name="status" widget="statusbar" statusbar_visible="draft,done,cancel"/>
                 </header>
                 <sheet>
                     <group>
                         <group>
                             <field name="name"/>
+                            <field name="person_id"/>
                             <field name="city"/>
                             <field name="phone"/>
                             <field name="quantity"/>
@@ -38,12 +38,14 @@
             <field name="arch" type="xml">
                 <tree string="home Services">
                         <field name="name"/>
+                        <field name="person_id"/>
                         <field name="city"/>
                         <field name="phone"/>
                         <field name="quantity"/>
                         <field name="service_type"/>
                         <field name="amount"/>
                         <field name="date"/>
+                        <field name="status"/>
                 </tree>
             </field>
         </record>

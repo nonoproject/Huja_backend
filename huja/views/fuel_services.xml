@@ -6,7 +6,7 @@
         <field name="arch" type="xml">
             <form string="Fuel Services">
                 <header>
-                        <!-- Post -->
+
                         <button name="action_to_done" string="Done" class="oe_highlight"
                                 type="object"   attrs="{'invisible': [('status','!=','draft')]}" />
                     <button name="action_to_cancel" string="Cancel" class="oe_highlight"
@@ -17,6 +17,7 @@
                 <sheet>
                     <group>
                         <group>
+                            <field name="person_id"/>
                             <field name="services_type"/>
                             <field name="fuel_type"/>
                             <field name="quantity"/>
@@ -36,12 +37,14 @@
             <field name="model">huja.fuel.services</field>
             <field name="arch" type="xml">
                 <tree string="Fuel Services">
+                        <field name="person_id"/>
                         <field name="services_type"/>
                         <field name="fuel_type"/>
                         <field name="quantity"/>
                         <field name="city"/>
                         <field name="amount"/>
                         <field name="phone"/>
+                        <field name="status"/>
                 </tree>
             </field>
         </record>
