@@ -22,7 +22,7 @@
                         <field name="city"/>
                         <field name="quantity"/>
                         <field name="services_type"/>
-                        <field name="Amount"/>
+                        <field name="amount"/>
 
                         </group>
 
@@ -42,7 +42,7 @@
                         <field name="city"/>
                         <field name="quantity"/>
                         <field name="services_type"/>
-                        <field name="Amount"/>
+                        <field name="amount"/>
                     <field name="status"/>
                 </tree>
             </field>

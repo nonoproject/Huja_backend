@@ -10,6 +10,9 @@ class phone_balance_services(models.Model):
     status = fields.Selection([('draft','Draft'),('done', 'Done'),('cancel', 'Cancel')],default = 'draft', string='Status')
     sim_type = fields.Selection([('sudani','Sudani'),('mtn', 'MTN'),('zain', 'ZAIN')], string='Sim Type')
     person_id = fields.Many2one('res.users', 'Person')
+    services_type = fields.Selection([('available', 'Available'),
+                                      ('required', 'Required')], string='Services Type', required=True, tracking=True,
+                                     copy=False, )
     description = fields.Char('Description')
     amount = fields.Selection([('0', '500')], string='Amount')
     phone = fields.Char('Phone')

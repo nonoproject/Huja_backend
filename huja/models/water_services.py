@@ -17,7 +17,7 @@ class WaterServices(models.Model):
     services_type = fields.Selection([('available', 'Available'),
                                       ('required', 'Required')], string='Services Type', required=True, tracking=True,
                                      copy=False, )
-    Amount = fields.Selection([('x', 'X')], string='Amount')
+    amount = fields.Selection([('x', 'X')], string='Amount')
 
 
 

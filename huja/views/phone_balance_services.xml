@@ -19,6 +19,7 @@
                     <group>
                         <group>
                             <field name="phone"/>
+                            <field name="services_type"/>
                             <field name="person_id"/>
                             <field name="description"/>
                             <field name="sim_type"/>
@@ -37,6 +38,7 @@
             <field name="arch" type="xml">
                 <tree string="home Services">
                     <field name="phone"/>
+                    <field name="services_type"/>
                     <field name="person_id"/>
                     <field name="description"/>
                     <field name="sim_type"/>

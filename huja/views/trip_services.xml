@@ -23,7 +23,7 @@
                         <field name="to_location"/>
                         <field name="services_type"/>
                         <field name="people_number"/>
-                        <field name="Amount"/>
+                        <field name="amount"/>
                         <field name="date"/>
                         </group>
 
@@ -44,7 +44,7 @@
                         <field name="to_location"/>
                         <field name="services_type"/>
                         <field name="people_number"/>
-                        <field name="Amount"/>
+                        <field name="amount"/>
                         <field name="date"/>
                         <field name="status"/>
                 </tree>

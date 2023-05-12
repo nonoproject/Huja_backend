@@ -19,7 +19,7 @@ class HomeServices(models.Model):
                                       ('required', 'Required')], string='Services Type', required=True, tracking=True, copy=False,)
     room_number = fields.Selection([('x', 'X')], string='Room Number')
     people_number = fields.Selection([('x', 'X')], string='People Number')
-    Amount = fields.Selection([('x', 'X')], string='Amount')
+    amount = fields.Selection([('x', 'X')], string='Amount')
     date = fields.Date('Date')
 
 

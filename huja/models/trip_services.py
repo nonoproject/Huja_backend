@@ -18,7 +18,7 @@ class TripServices(models.Model):
                                       ('required', 'Required')], string='Services Type', required=True, tracking=True,
                                      copy=False, )
     people_number = fields.Selection([('x', 'X')], string='People Number')
-    Amount = fields.Selection([('x', 'X')], string='Amount')
+    amount = fields.Selection([('x', 'X')], string='Amount')
     date = fields.Date('Date')
 
 
